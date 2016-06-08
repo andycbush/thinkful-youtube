@@ -1,0 +1,124 @@
+/* -------------------------------------
+CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules bellow)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+    font-family: "Oswald", sans-serif;
+    background: #CD421A;
+    color: #444;
+}
+
+#wrapper {
+    background: #CD421A;
+    margin: 1em auto;
+    max-width: 900px;
+    padding: 15px;
+}
+
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+form {
+    margin-top: 2em;
+}
+
+#query {
+    display: block;
+    border: 1px solid #434343;
+    background: none;
+    padding: .3em;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+form div {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.myButton {
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    border-radius: 3px;
+    border: 1px solid #942911;
+    display: inline-block;
+    cursor: pointer;
+    color: #393939;
+    font-family: arial;
+    font-size: 1.5em;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
+}
+
+#search-results ul {
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+#search-results li {
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 1px solid #434343;
+    border-bottom-width: 3px;
+}
+
+#search-results li p {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #434343;
+}
+
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
+
+
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles bellow this line
+*/
